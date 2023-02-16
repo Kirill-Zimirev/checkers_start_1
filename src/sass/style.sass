@@ -5,26 +5,36 @@ header
     height: 35px
     width: 100%
     background-color: black
-    border-bottom: 5px solid white
+    box-shadow: 2px 2px 5px rgba(148, 145, 145, 0.136)
 
 .header-text
     color: white
 
 footer
+    height: 80px
+    padding-top: 15px
     color: white
-    height: 50px
     width: 100%
     background-color: black
+    .container
+        flex-wrap: wrap
+        width: 600px
+        display: flex
+        justify-content: center
+        a
+            margin: 0 15px
+            &:hover
+                color: #668dc1
 
 a
     color: white
     text-decoration: none
 
 a:hover
-    color: orange
-
+    color: #668dc1
 main
     padding-top: 35px
     height: 1000px
+    background: url("../img/background.jpg")
 @import 'form'
 
