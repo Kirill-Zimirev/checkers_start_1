@@ -11,20 +11,91 @@ header
     color: white
 
 footer
-    height: 80px
-    padding-top: 15px
-    color: white
-    width: 100%
     background-color: black
+    height: 148px
+    padding: 14px 23px 0 23px
+    .stick
+        width: 299px
+        height: 4px
+        background-color: #668dc1
+        margin: 0 auto
+    .social
+        display: inline-block
     .container
-        flex-wrap: wrap
-        width: 600px
+        text-align: center
+    .wrapper
         display: flex
-        justify-content: center
-        a
-            margin: 0 15px
-            &:hover
-                color: #668dc1
+        justify-content: space-between
+        margin-top: 34px
+        .social
+            display: flex
+            width: 33%
+            &_round
+                width: 32px
+                height: 32px
+                background-color: #668dc1
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 9px
+                &:hover
+                    background-color: #3783e6
+            .line
+                max-height: 32px
+                text-decoration: none
+                a
+                    text-decoration: none
+                    span
+                        color: #fff
+        .main_text
+            width: 33%
+            &_title
+                margin: 0 auto
+                width: 364px
+                display: flex
+                justify-content: space-around
+                .tit
+                    a
+                        font-size: 15px
+                        font-weight: 300
+                        text-transform: uppercase
+                        color: white
+                        text-decoration: none
+                        &:hover
+                            color: #668dc1
+            &_subtitle
+                margin: 0 auto
+                display: flex
+                width: 390px
+                justify-content: space-around
+                .sub
+                    a
+                        font-size: 11px
+                        font-weight: 300
+                        text-transform: uppercase
+                        color: #d1cbcb
+                        margin-top: 10px
+                        text-decoration: none
+                        &:hover
+                            color: #668dc1
+                        
+            .lang
+                text-align: center
+                a
+                    font-size: 11px
+                    font-weight: 400
+                    text-transform: uppercase
+                    color: #668dc1
+                    text-decoration: none
+                    margin-top: 19px
+                    &:hover
+                        color: #668dc1
+        .apps
+            width: 33%
+            display: flex
+            justify-content: flex-end
+            height: 27px
 
 a
     color: white
