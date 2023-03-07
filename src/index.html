@@ -18,48 +18,52 @@
             </div>
         </div>
     </header>
-    <main class="main_page">
-        <div class="top-menu">
-            <div class="top-menu-ng" id="new-game">
-                <span><button>Новая игра</button></span>
-            </div>
-            <div class="top-menu-group_one">
-                Играем в:
-                <div class="dropdown type-dropdown">
-                    <div class="top-menu-item dropdown-title" data-type="rus">
-                        <span class="top-menu-text">Русские шашки</span>
-                    </div>
-                    <div class="dropdown-content">
-                        <div data-type="eng">Английские</div>
-                    </div>
+    <div class="container">
+        <main class="main_page">
+            <div class="top-menu">
+                <div class="top-menu-ng" id="new-game">
+                    <span><button>Новая игра</button></span>
+                </div>
+                <div class="top-menu-group_one">
+                    <button>
+                        Играем в:
+                        <div class="dropdown type-dropdown">
+                            <div class="top-menu-item dropdown-title" data-type="rus">
+                                <span class="top-menu-text">Русские шашки</span>
+                            </div>
+                            <div class="dropdown-content">
+                                <div data-type="eng">Английские</div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="top-menu-item" id="settings">
+                    <img class="top-menu-icon" src="icons/settings.svg">
+                    <button><span class="top-menu-text">Настройки</span></button>
+                </div>
+                <div class="top-menu-item disabled" id="cancel-turn">
+                    <img class="top-menu-icon" src="icons/cancel.svg">
+                    <button><span class="top-menu-text">Отменить ход</span></button>
+                </div>
+                <div class="top-menu-group_two">
+                    <button>
+                        Сложность:
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </button>
                 </div>
             </div>
-            <div class="top-menu-item" id="settings">
-                <img class="top-menu-icon" src="/assets/images/icons/settings.png">
-                <span class="top-menu-text">Настройки</span>
-            </div>
-            <div class="top-menu-item disabled" id="cancel-turn">
-                <img class="top-menu-icon" src="/assets/images/icons/close.png">
-                <span class="top-menu-text">Отменить ход</span>
-            </div>
-            <div class="top-menu-group_two">
-                Сложность:
-                <div class="dropdown level-dropdown">
-                    <div class="top-menu-item dropdown-title" data-type=1>
-                        <span class="top-menu-text">Новичок</span>
-                    </div>
-                    <div class="dropdown-content">
-                        <div data-type=2>Средний</div>
-                        <div data-type=3>Эксперт</div>
-                    </div>
+            <div class="video">
+                <div class="video__wrapper">
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/hRULqbEdazc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <button class="main__button"><img src="icons/beaver.png" alt="beaver" class="beaver"></button>
                 </div>
-            </div>
-        </div>
-        <div class="video">
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/hRULqbEdazc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <span class="text_video">бобр скример</span>
-        </div>        
-    </main>
+            </div>        
+        </main>
+    </div>
     <footer>
         <div class="stick"></div>
         <div class="wrapper">
@@ -87,5 +91,6 @@
             <div class="apps"><a href="#" class="apps"></a></div>
         </div>
     </footer>
+    <script src="js/beaver.js"></script>
 </body>
 </html>
